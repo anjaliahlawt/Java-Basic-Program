@@ -71,3 +71,90 @@ input.close();
       
 }
 */
+//program 6:take input of two numbers and print thr sum
+/*import java.util.Scanner;
+public class program{
+    public static void main(String[] args) {
+        int num1.num2,sum;
+        System.out.println("enter the number");
+        Scanner input=new Scanner(System.in);
+         num1=input.nextInt();
+         num2=input.nextInt();
+        sum=num1+num2;
+        System.out.println("the sum is" + sum);
+        input.close();
+    }
+}
+*/
+//program7:swap two number
+/*public class program{
+    public static void main(String[] args){
+       int a=2,b=3,c=0;
+       c=a;
+       a=b;
+       b=c;
+       System.out.println("a is" + a+ " "+ "b is" +
+       b);
+    }
+}
+*/
+//program 8 swap number using function
+/*public class program{
+    public static void main(String[] args) {
+        swap(2,3);
+    }
+    static void swap(int a,int b){
+        int c=0;
+        c=a;
+        a=b;
+        b=c;
+        System.out.println("a is " + a + "b is"+ b);
+    }
+}
+*/
+// progra:9 prime  number
+/*import java.util.Scanner;
+public class program{
+    public static void main(String[] args) {
+        System.out.println("entr the number");
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        int count=0;
+        for( int i=1;i<=n;i++)
+        if(n%i==0){
+            count++;
+             }
+         if(count==2){
+            System.out.println("prime number");
+         }
+         else{
+            System.out.println("not prime");
+         }
+         input.close();
+    }
+}
+*/
+// program 10 :armstrong number
+/*import java.util.Scanner;
+public class program{
+    public static void main(String[] args) {
+        System.out.println("enetr the number");
+        Scanner input=new Scanner(System.in);
+        int n=input.nextInt();
+        int rem,arm=0;
+        int c=n;
+        while(n!=0){
+            rem=n%10;
+            arm=(rem*rem*rem)+arm;
+            n=n/10;
+        }
+        if(c==arm){
+            System.out.println("is an armstrong number");
+        }
+        else{
+            System.out.println("is not an armstrong number");
+        }
+        input.close();
+    }
+}
+*/

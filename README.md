@@ -98,4 +98,66 @@ The main difference between primitive and non-primitive data types are:
 
 #System.out.println("Username is: " + userName);: This line is used to print the input received from the user.
 #The close() method in Java, when used with a Scanner object, is used to close the Scanner object and free up any resources it is using. It's good practice to close resources like a Scanner when you're done using them to prevent resource leaks.
-#int number = scanner.nextInt();: We're using the nextInt() method to get the next input from the user as an int. If the user inputs an integer, it will be stored in the number variable. If the user inputs something that isn't an integer, this will cause an InputMismatchException.*/
+#int number = scanner.nextInt();: We're using the nextInt() method to get the next input from the user as an int. If the user inputs an integer, it will be stored in the number variable. If the user inputs something that isn't an integer, this will cause an InputMismatchException.
+
+*************************************LECTURE 11************************************************
+
+1.WHAT IS FUNCTION /METHOD
+# A method is a block of code which only runs when it is called.
+  You can pass data, known as parameters, into a method.
+  Methods are used to perform certain actions, and they are also known as functions.
+
+2.Parameters and Arguments
+ #Information can be passed to methods as parameter. Parameters act as variables inside the method.
+
+Parameters are specified after the method name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+
+The following example has a method that takes a String called fname as parameter. When the method is called, we pass along a first name, which is used inside the method to print the full name:
+
+public class Main {
+  static void myMethod(String fname) {
+    System.out.println(fname + " Refsnes");
+  }
+
+  public static void main(String[] args) {
+    myMethod("Liam");
+    myMethod("Jenny");
+    myMethod("Anja");
+  }
+}
+When a parameter is passed to the method, it is called an argument. So, from the example above: fname is a parameter, while Liam, Jenny and Anja are arguments.
+
+3.RETURN VALUE
+#The void keyword indicates that the method should not return a value. If you wTant the method to return a value, you can use a primitive data type (such as int, char, etc.) instead of void, and use the return keyword inside the method:
+
+4.METHOD OVERLOADING:
+#With method overloading, multiple methods can have the same name with different parameters:
+
+5.SCOPE:
+#In Java, variables are only accessible inside the region they are created. This is called scope.
+
+#Method Scope
+Variables declared directly inside a method are available anywhere in the method following the line of code in which they were declared:
+
+#Block Scope
+A block of code refers to all of the code between curly braces {}.
+Variables declared inside blocks of code are only accessible by the code between the curly braces, which follows the line in which the variable was declared:
+
+6.what is the use of ...vararg?
+#In Java, ...var is used to declare varargs (variable arguments). It is a feature that allows a method to accept zero or more arguments of a specified type. Varargs can be used when you don't know how many of a particular type of argument will be passed to the method. It's a shortcut to creating an array manually.
+
+************************************ LECTURE 12 ********************************************
+
+1.WHAT6 IS ARRAY?
+#Arrays are used to store multiple values in a single variable, instead of declaring separate variables   for each value.
+To declare an array, define the variable type with square brackets:
+for ex: string[]=cars;
+
+2.WHAT IS FOR-EACH LOOP?
+#There is also a "for-each" loop, which is used exclusively to loop through elements in arrays:
+syntax: for (type variable : arrayname) {  }.
+
+3.Multidimensional Arrays?
+#A multidimensional array is an array of arrays.
+  Multidimensional arrays are useful when you want to store data as a tabular form, like a table with rows and columns.
+To create a two-dimensional array, add each array within its own set of curly braces:
