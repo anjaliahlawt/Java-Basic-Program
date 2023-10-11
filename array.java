@@ -103,3 +103,41 @@ public class array{
 
     }
 }*/
+//swap a aaray index
+
+/*import java.util.*;
+public class array {
+    public static void main(String[] args) {
+        int[] arr = { 1, 2, 4, 3 };
+        System.out.println(Arrays.toString(arr));
+        swap(arr, 1, 2);
+        System.out.println(Arrays.toString(arr));
+    }
+
+    static void swap(int[] arr, int index1, int index2) {
+        int c = arr[index1];
+        arr[index1]=arr[index2];
+        arr[index2]=c;
+    }
+}*/
+
+//maximum value of an aary
+/*import java.util.*;
+public class array{
+    public static void main(String[] args) {
+        int[]arr={1,2,3,4,};
+        System.out.println(max(arr,1,4));
+    }
+    static int max(int []arr,int start,int end){
+        int maxvalue=start;
+        for(int i=start;i<end;i++){
+          if(arr[i]>maxvalue){
+            maxvalue=arr[i];
+          }
+        
+        }
+           return maxvalue;
+    }
+}
+*/
+
