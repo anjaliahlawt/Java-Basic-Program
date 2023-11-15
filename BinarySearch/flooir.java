@@ -24,6 +24,7 @@ public class flooir
           else if(target>arr[mid])
           {
              start=mid+1;
+             
           }
           else
           {
