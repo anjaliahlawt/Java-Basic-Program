@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class duplicate 
 {
     public static void main(String[] args) 
@@ -9,7 +11,7 @@ public class duplicate
             {
                 if(arr[i]==arr[j])
                 {
-                    System.out.println(arr[j]);
+                    System.out.println((arr[i]));
                 }
             }
         }
