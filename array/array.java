@@ -141,3 +141,60 @@ public class array{
 }
 */
 
+import java.util.ArrayList;
+
+public class array
+{
+    public static void main(String[] args) 
+    {
+        int []arr={2,3,4,5};
+        int n =arr.length;
+          int max=arr[0];
+          int min=arr[0];
+          ArrayList<Integer> primeArray=new ArrayList<Integer>();
+          int sumofArray=0;
+          int MultiplyofArray=1;
+          int sumOfEvenNumber=0;
+          int sumOfOddNumber=0;
+        for(int i=0;i<n;i++)
+        { 
+            sumofArray=sumofArray+arr[i];
+            MultiplyofArray=MultiplyofArray*arr[i];
+            boolean isPrime=true;
+            for(int j=2;j<arr[i];j++){
+                if(arr[i]%j==0){
+                     isPrime=false;
+                     break;
+                }
+
+            }
+            if(isPrime){
+                primeArray.add(arr[i]);
+            }
+            if(arr[i]>max)
+            {
+               max=arr[i];
+            }
+            if(arr[i]<min)
+            {
+               min=arr[i];
+            }
+            if(i%2==0)
+            {
+               sumOfEvenNumber=sumOfEvenNumber+arr[i];
+            }
+            else
+            {
+                sumOfOddNumber=sumOfOddNumber+arr[i];
+            }
+        }
+        System.out.println("sum of number"+sumofArray);
+        System.out.println("multiplyof number"+MultiplyofArray);
+        System.out.println("maximum number"+max);
+        System.out.println("minimunm number "+min);
+        System.out.println("sum of even number"+sumOfEvenNumber);
+        System.out.println("sum of odd number"+sumOfOddNumber);
+         System.out.println("Prime Number Array"+primeArray);
+    }
+}
+
