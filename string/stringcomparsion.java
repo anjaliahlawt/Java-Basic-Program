@@ -1,0 +1,16 @@
+public class stringcomparsion 
+{
+    public static void main(String[] args) 
+    {
+         String a="anjali";
+         String b="anjali";
+         //String c=a;
+         System.out.println(a==b);
+         String name1=new String("anjali");
+         String name2=new String("anjali");
+         System.out.println(name1==name2);
+         System.out.println(name1.equals(name2));
+         System.out.println(name1.charAt(0));
+        
+    }
+}
