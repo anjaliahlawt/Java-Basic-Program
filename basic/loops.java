@@ -1,4 +1,4 @@
-//package basic;
+package basic;
 //FOR-LOOP
 /*public class loops 
 {

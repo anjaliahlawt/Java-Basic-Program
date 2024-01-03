@@ -1,3 +1,7 @@
+//string is immutable means that not change 
+
+
+
 //package string;
 
 public class s1 
@@ -10,5 +14,6 @@ public class s1
         System.out.println(name.toUpperCase());
         System.out.println(name.toLowerCase());
         System.out.println(name.indexOf("n"));
+        System.out.println("my name is anjali");
     }
 }
