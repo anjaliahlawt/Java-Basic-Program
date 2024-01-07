@@ -1,7 +1,7 @@
 // 1.this keyword refers to the current object inside a method or constructor
 
 
-//package thiskeyword
+package thiskeyword;
 /*class a
  {
     void show()
